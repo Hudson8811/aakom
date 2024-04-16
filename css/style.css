@@ -1394,7 +1394,7 @@ aside.widget.widget-tag-cloud a:hover,
 	position: relative;
 	margin-bottom: 30px;
 }
-.blog-details .blog-classic .pbmit-meta-cat a{
+.blog-details .blog-classic .pbmit-meta-cat a, .blog-details .blog-classic .pbmit-meta-date {
 	position: absolute;
     bottom: 15px;
     left: 15px;
@@ -1407,10 +1407,10 @@ aside.widget.widget-tag-cloud a:hover,
     text-transform: uppercase;
 	font-family: var(--pbmit-heading-typography-font-family);
 }
-.blog-details .blog-classic .pbmit-meta-cat a:hover{
+.blog-details .blog-classic .pbmit-meta-cat a:hover, .blog-details .blog-classic .pbmit-meta-date:hover {
 	background-color: var(--pbmit-blackish-color);
 }
-.blog-details .blog-classic .pbmit-meta-cat a:before{
+.blog-details .blog-classic .pbmit-meta-cat a:before {
 	position: absolute;
     content: '';
     top: 50%;
@@ -1421,6 +1421,11 @@ aside.widget.widget-tag-cloud a:hover,
     -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+}
+.blog-details .blog-classic .pbmit-meta-date {
+	bottom: 15px;
+    right: 15px;
+	left: auto;
 }
 .blog-details .pbmit-blog-classic-inner{
 	position: relative;
