@@ -23,6 +23,51 @@
     background-color: #666;
 }
 
+.requisites {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    gap: 0 39px;
+}
+
+.requisites .requisites__item {
+    min-width: 181px;
+}
+
+.requisites .requisites__item:nth-child(even) {
+    grid-column: 1 / 2;
+}
+
+.requisites .requisites__item:nth-child(odd) {
+    grid-column: 2 / 6;
+}
+
+.requisites .requisites__item:first-child {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 6;
+    margin-bottom: 22px;
+}
+
+.requisites .requisites__item:first-child .requisites__value {
+    text-transform: uppercase;
+}
+
+.requisites .requisites__name,
+.requisites .requisites__value {
+    text-transform: uppercase;
+    color: var(--pbmit-blackish-color);
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.requisites .requisites__value {
+    font-weight: 400;
+    color: #666;
+    text-transform: none;
+}
+
 /* Header */
 
 .site-header .pbmit-pre-header-left {
@@ -87,6 +132,11 @@
     margin-bottom: 48px;
 }
 
+.site-footer.footer-style-3 .pbmit-btn:hover {
+    background-color: var(--pbmit-white-color);
+    color: var(--pbmit-global-color);
+}
+
 .site-footer.footer-style-3 .pbmit-social-links li:first-child a {
     background-color: transparent;
 }
@@ -125,4 +175,496 @@
 
 .fid-one_box .pbminfotech-ele-fid-style-1 .pbmit-fid-title {
     margin-top: 28px;
+}
+
+.pbmit-service-style-1 .pbminfotech-post-item {
+    padding: 45px 42px 25px;
+    min-height: 497px;
+}
+
+.pbmit-service-style-1 .pbminfotech-post-item .own-text-list li {
+    padding: 0;
+}
+
+.pbmit-service-style-1 .pbminfotech-post-item .own-text-list li::before {
+    left: -15px;
+}
+
+.pbmit-service-style-1 .pbminfotech-box-content h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.about-us_one .pbmit-ihbox-style-4 .pbmit-btn {
+    background-color: var(--pbmit-white-color);
+    margin-top: 63px;
+}
+
+.about-us_one .pbmit-ihbox-style-4 .pbmit-btn:hover {
+    background-color: var(--pbmit-blackish-color);
+}
+
+.portfolio-one-top_area {
+    margin-top: 130px;
+}
+
+.client-section_one {
+    padding-top: 130px;
+    padding-bottom: 67px;
+}
+
+/* Блог */
+
+.pbmit-title-bar-wrapper .pbmit-tbar {
+    padding-right: 0;
+}
+
+.pbmit-title-bar-wrapper .pbmit-breadcrumb {
+    padding-left: 0;
+}
+
+.pbmit-blog-style-1 .post-item {
+    height: 100%;
+}
+
+.pbmit-blog-style-1 .post-item .pbmit-category-date-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pbmit-blog-style-1 .post-item .pbmit-category-date-wraper .pbmit-post-date {
+    position: relative;
+    z-index: 10;
+    top: -20px;
+    right: -18px;
+}
+
+.blog-page .pbmit-element-posts-wrapper .pbmit-blog-style-1 {
+    position: relative !important;
+}
+
+.blog-page .pbmit-element-posts-wrapper .pbmit-blog-style-1 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+/* Статья */
+
+.blog-details .blog-classic .pbmit-entry-content .pbmit-icon-list-text {
+    color: #666666;
+    font-weight: 400;
+}
+
+.blog-details .blog-classic .pbmit-entry-content ol li::marker {
+    font-weight: 700;
+
+}
+
+.blog-details .single-blog-authorbox .pbmit-social-links li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Контакты */
+
+.requisites_section {
+    padding-top: 0;
+}
+
+.contact-form-section {
+    padding-bottom: 85px;
+}
+
+/* О компании */
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-post-items {
+    padding: 0;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-post-items:before {
+    border-left: 1px dashed #C0C8DE;
+    width: 1px;
+    background-color: #F4F4F4;
+    left: calc(50% - 0.5px);
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-first-timeline {
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    background-color: #C0C8DE;
+    border: none;
+    left: calc(50% - 5px);
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-last-timeline {
+    width: 9px;
+    height: 9px;
+    border: none;
+    border-right: 1px solid var(--pbmit-global-color);
+    border-bottom: 1px solid var(--pbmit-global-color);
+    left: calc(50% - 5px);
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-right {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner:nth-child(odd) .pbmit-ourhistory-type2 .pbmit-ourhistory-right {
+    justify-content: flex-start;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner:nth-child(odd) .pbmit-ourhistory-type2 .pbmit-ourhistory-left {
+    justify-content: flex-end;
+}
+
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-right .content {
+    border: none;
+    padding: 31px 30px 33px 50px;
+    border-radius: 5px;
+    box-shadow: 6px 7px 20px 0px #00000033;
+    background-color: var(--pbmit-white-color);
+    max-width: 363px;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-right .content .pbmit-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1em;
+    color: var(--pbmit-global-color);
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-right .content .simple-text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.73em;
+    color: #666;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-right .label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--pbmit-global-color);
+    z-index: 10;
+    color: var(--pbmit-white-color);
+}
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-right .label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 100%;
+    border-top: 1px dashed #C0C8DE;
+    background-color: #F4F4F4;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner {
+    position: relative;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--pbmit-white-color);
+    border: solid 3px var(--pbmit-global-color);
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner:nth-child(even) .pbmit-ourhistory-type2 .pbmit-ourhistory-right .label {
+    right: -30px;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner:nth-child(even) .pbmit-ourhistory-type2 .pbmit-ourhistory-right .label::after {
+    left: 100%;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner:nth-child(odd) .pbmit-ourhistory-type2 .pbmit-ourhistory-right .label {
+    left: -30px;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner:nth-child(odd) .pbmit-ourhistory-type2 .pbmit-ourhistory-right .label::after {
+    right: 100%;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-right .content::after {
+    content: none !important;
+}
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-inner .pbmit-ourhistory-type2 .pbmit-ourhistory-right .content::before {
+    content: none !important;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-post-items .pbmit-timeline-inner {
+    padding-bottom: 0;
+    margin-bottom: 70px;
+}
+
+.about_us .pbmit-timeline-style .pbmit-timeline .pbmit-timeline-post-items .pbmit-timeline-inner:last-child {
+    margin-bottom: 0;
+}
+
+.about-us_one {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    padding: 170px 0 85px 0;
+}
+
+/* О компании 2 */
+
+.about-us-2 .about-us__item {
+    padding-left: 83px;
+    position: relative;
+}
+
+.about-us-2 .about-us__item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--pbmit-global-color);
+}
+
+.about-us-2 .about-us__item .pbmit-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.27em;
+}
+
+.about-us-2 .about-us__item .simple-text p {
+    margin-bottom: 35px;
+}
+ 
+.about-us-2 .pbmit-timeline-style .container {
+    max-width: 1289px;
+}
+
+.about-us-2 .about-us__left {
+    padding-right: 0px;
+}
+
+.about-us-2 .about-us__right {
+    padding-left: 95px;
+}
+
+/* Документы */
+
+.docs-page .pbmit-btn.pbmit-btn-download span::after {
+    content: none;
+}
+
+.docs-page .pbmit-btn.pbmit-btn-download {
+   display: flex;
+   align-items: center;
+   padding: 20px 37px 20px 26px;
+   margin-bottom: 43px;
+}
+
+.docs-page .pbmit-btn.pbmit-btn-download:last-child {
+    margin-bottom: 0;
+ }
+
+.docs-page .pbmit-btn.pbmit-btn-download .file-svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.docs-page .pbmit-btn.pbmit-btn-download .arrow-svg {
+    margin-left: auto;
+    padding-right: 0;
+    width: 22px;
+    height: 22px;
+}
+
+.docs-page .about-us_one {
+    margin-top: 0;
+}
+
+/* Для бизнеса */
+
+.page-for-business .pbmit-blog-style-1 .pbmit-meta-date-month {
+    background-color: var(--pbmit-global-color);
+}
+
+.page-for-business .pbmit-blog-style-1 .pbmit-meta-date-month svg {
+    width: 26px;
+    height: 26px;
+}
+
+.page-for-business .blog_one {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.page-for-business .blog_one .pbmit-post-title {
+    font-size: 24px;
+}
+
+.page-for-business .blog_one .pbminfotech-box-content {
+    padding: 20px 30px;
+}
+
+.page-for-business .blog_one .pbmit-content-wrapper {
+    margin: 0;
+}
+
+.page-for-business .portfolio-one-top_area {
+    margin-top: 0;
+}
+
+.page-for-business .pbmit-element-portfolio-style-2 {
+    padding-bottom: 200px;
+}
+
+/* Направление */
+
+.direction-page .portfolio-one-top_area {
+    margin-top: 20px;
+}
+
+.direction-page .pbmit-element-portfolio-style-2 {
+    padding-bottom: 200px;
+}
+
+.direction-page .pbmit-portfolio-single .list-group {
+    margin-bottom: 30px;
+}
+
+/* Проект */
+
+.project-page .pbmit-portfolio-single .list-group--dotted {
+    list-style-type: disc;
+    color: var(--pbmit-blackish-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.55em;
+}
+
+.project-page .portfolio-one-top_area {
+    margin-top: 93px;
+}
+
+.project-page .pbmit-element-portfolio-style-2 {
+    padding-bottom: 200px;
+}
+
+/*404*/
+
+.error-page .pbmit-title-bar-wrapper {
+    background-image: url(../images/bg/404-titlebar-bg.jpg);
+    min-height: calc(100vh - 130px);
+}
+
+.error-page .pbmit-title-bar-wrapper .pbmit-title-bar-content {
+    padding-top: 150px;
+}
+
+.error-page .pbmit-title-bar-wrapper .pbmit-title-bar-content .pbmit-tbar-title {
+   font-size: 200px;
+   line-height: 1.05em;
+}
+
+.error-page .pbmit-title-bar-wrapper .pbmit-title-bar-content p {
+    font-family: Blender Pro;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 72px;
+    color: var(--pbmit-white-color);
+}
+
+.error-page .pbmit-title-bar-wrapper .pbmit-title-bar-content a {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 16px;
+    font-size: 17.58px;
+    font-weight: 500;
+    line-height: 1.64em;
+    color: var(--pbmit-white-color);
+}
+
+.error-page .pbmit-title-bar-wrapper .pbmit-title-bar-content a svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Поиск */
+
+.search-page .pbmit-site-searchform button {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    text-indent: -9999px;
+    line-height: 58px;
+    font-size: 16px;
+    outline: none;
+    padding: 0;
+    border: none;
+    z-index: 1;
+    color: var(--pbmit-white-color);
+}
+
+.search-page .pbmit-site-searchform:after {
+    font-family: "pbminfotech-base-icons";
+    content: '\e80d';
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #000;
+    font-size: 25px;
+    line-height: normal;
+}
+
+.search-page .pbmit-search-outer {
+    margin: 0;
+    transform: none;
+}
+
+.search-page .pbmit-site-searchform .form-control {
+    font-size: 24px;
+    padding: 14px 0 16px;
+    border: none;
+    border-bottom: 1px solid #14193C;
+}
+
+.search-page .search-page__results {
+    margin-top: 79px;
 }
