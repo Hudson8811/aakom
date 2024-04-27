@@ -10,6 +10,7 @@
     position: relative;
     padding: 0 7px 0 15px;
     color: #666;
+    transition: color 0.3s linear;
 }
 
 .own-text-list li::before {
@@ -21,6 +22,10 @@
     width: 5px;
     height: 5px;
     background-color: #666;
+}
+
+.pbmit-service-style-1:hover .own-text-list li {
+    color: #fff;
 }
 
 .requisites {
@@ -85,7 +90,7 @@
     flex-direction: column;
 }
 
-.m-intro-slider__img {
+.m-intro-slider__media {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,10 +98,21 @@
     height: 100%;
 }
 
-.m-intro-slider__img img {
+.m-intro-slider__media img, .m-intro-slider__media video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.m-intro-slider__media:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(20, 25, 60, 0.6);
+    ;
 }
 
 .m-intro-slider__title {
@@ -508,6 +524,14 @@
     padding-bottom: 67px;
 }
 
+.client-section_one .swiper-slider.marquee .swiper-slide {
+    width: 295px !important;
+}
+
+.client-section_one .swiper-slider.marquee .swiper-slide .pbmit-border-wrapper {
+    width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
     .portfolio-one-top_area {
         margin-top: 60px;
@@ -563,6 +587,17 @@
     z-index: 10;
     top: -20px;
     right: -18px;
+}
+
+.pbmit-blog-style-1 .pbmit-featured-wrapper {
+    aspect-ratio: 1/0.56;
+}
+
+.pbmit-blog-style-1 .pbmit-featured-wrapper img,
+.pbmit-blog-style-1 .pbmit-featured-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .blog-page .pbmit-element-posts-wrapper .pbmit-blog-style-1 {
@@ -1041,11 +1076,12 @@
 
 .error-page .pbmit-title-bar-wrapper {
     background-image: url(../images/bg/404-titlebar-bg.jpg);
-    min-height: calc(100vh - 130px);
+    background-position: top center;
 }
 
 .error-page .pbmit-title-bar-wrapper .pbmit-title-bar-content {
     padding-top: 150px;
+    padding-bottom: 200px;
 }
 
 .error-page .pbmit-title-bar-wrapper .pbmit-title-bar-content .pbmit-tbar-title {

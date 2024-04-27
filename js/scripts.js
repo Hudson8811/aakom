@@ -119,9 +119,10 @@
 					var reverse_direction = $(this).data('reverse');
 					if (!reverse_direction) reverse_direction = false;
 					var swiper2 = new Swiper( '.pbmit-element-viewtype-carousel-' + x, { 
-						spaceBetween: 0,
+						spaceBetween: 30,
 						centeredSlides: true,
-						speed: 5000,
+						freeMode: true,
+						speed: 3000,
 						autoplay: {
 							delay: 1,
 							disableOnInteraction: true,
@@ -134,7 +135,7 @@
 					});
 				} else{                   
 				var swiper = new Swiper( '.pbmit-element-viewtype-carousel-' + x, { 
-					loop: loop, 
+					loop: loop,
 					navigation: navigation_val,
 					pagination: pagination_val,
 					slidesPerView: columns,
@@ -142,7 +143,8 @@
 					loopedSlides: loopSlide, 
 					autoplay : autoplay2,
 					effect: style,
-					speed: sl_speed, 
+					speed: sl_speed,
+					delay: 0,
 					grabCursor: false,
 					centeredSlides: val_center,
 					breakpoints		  : {
@@ -516,8 +518,9 @@
    /*-------------------------------------
     Contact form validator
     -------------------------------------*/
+
     if ( $.isFunction($.fn.validate) ) {
-      $("#contact-form").validate(); 
+		$("#contact-form").validate(); 
     }
 
 
@@ -560,6 +563,7 @@
     Masonry
    -------------------------------------*/
  
+//document.addEventListener("load", function() {
 	if (jQuery('.pbmit-element-viewtype-masonry').length > 0) {
 		jQuery('.pbmit-element-viewtype-masonry').each(function() {
 
@@ -580,6 +584,7 @@
 			
 		}
 	)};
+//})
 
 document.addEventListener("DOMContentLoaded", () => {
 	const mIntroSlider = document.querySelector('[data-js="mIntroSlider"]');

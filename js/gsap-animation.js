@@ -802,12 +802,12 @@ $(window).on('load', function(){
     pbmit_splite_slide();
     pbmit_moving_team();
     pbmit_verticle_slide_image();
-    // Init cursor
-    const cursor = new Cursor();
+    // Init cursor РАСКОММЕНТИРОВАТЬ ЕСЛИ НУЖНА ТОЧКА БЕГАЮЩАЯ ЗА КУРСОРОМ
+    /*const cursor = new Cursor();
     $('[data-magnetic]').each(function() { new Magnetic(this); });
     gsap.delayedCall(1, () =>
         ScrollTrigger.getAll().forEach((t) => {
             t.refresh();
         })
-    );
+    );*/
 });
