@@ -51,19 +51,19 @@
 
 
 				if( columns === 1 ||  columns == 1.6 ){ 
-					var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '1', /* 767 : */ '1', /* 575 : */ '1', /* 0 : */ '1' ];
+					var responsive_items = [ /* 1800 : */ columns, /* 1400 : */ '1', /* 767 : */ '1', /* 575 : */ '1', /* 0 : */ '1' ];
 				} else if( columns === 2 ||  columns == 2.1  ||  columns == 2.5){ 
-					var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '2', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
+					var responsive_items = [ /* 1800 : */ columns, /* 1400 : */ '2', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
 				} else if( columns === 3 ||  columns == 3.5 ){
-					var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '3', /* 767 : */ '3', /* 575 : */ '2', /* 0 : */ '1' ];
+					var responsive_items = [ /* 1800 : */ columns, /* 1400 : */ '3', /* 767 : */ '3', /* 575 : */ '2', /* 0 : */ '1' ];
 				} else if( columns === 4||  columns == 4.5 ){
-					var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '4', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
+					var responsive_items = [ /* 1800 : */ columns, /* 1400 : */ '4', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
 				} else if( columns === 5 ){
-					var responsive_items = [ /* 1199 : */ '5', /* 991 : */ '4', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
+					var responsive_items = [ /* 1800 : */ '5', /* 1400 : */ '4', /* 767 : */ '2', /* 575 : */ '1', /* 0 : */ '1' ];
 				} else if( columns === 6 ){
-					var responsive_items = [ /* 1199 : */ '6', /* 991 : */ '4', /* 767 : */ '3', /* 575 : */ '2', /* 0 : */ '1' ];
+					var responsive_items = [ /* 1800 : */ '6', /* 1400 : */ '4', /* 767 : */ '3', /* 575 : */ '2', /* 0 : */ '1' ];
 				} else {
-					var responsive_items = [ /* 1199 : */ '3', /* 991 : */ '3', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
+					var responsive_items = [ /* 1800 : */ '3', /* 1400 : */ '3', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
 				}
 
 				if (val_dots === true) {
@@ -146,10 +146,10 @@
 					grabCursor: false,
 					centeredSlides: val_center,
 					breakpoints		  : {
-					1199 : {
+					1800 : {
 						slidesPerView	: responsive_items[0],
 					},
-					991	 : {					
+					1400 : {					
 						slidesPerView	: responsive_items[1],
 					},
 					767	 : {
@@ -613,7 +613,16 @@ document.addEventListener("DOMContentLoaded", () => {
 					prevEl: '.swiper-button-prev',
 				},
 				breakpoints: {
+					415: {
+						slidesPerView: 1.2,
+					},
+					520: {
+						slidesPerView: 2,
+					},
 					768: {
+						slidesPerView: 2.5,
+					},
+					1025: {
 						slidesPerView: 2,
 					}
 				}
