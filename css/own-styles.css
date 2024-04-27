@@ -1108,6 +1108,10 @@
 
 /* Поиск */
 
+.pbmit-search-outer {
+    width: calc(100% - 40px);
+}
+
 .search-page .pbmit-site-searchform button {
     position: absolute;
     height: 50px;
@@ -1150,4 +1154,25 @@
 
 .search-page .search-page__results {
     margin-top: 79px;
+}
+
+
+/* Список страниц */
+
+.pages-page .pages-page__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 2em;
+    grid-gap: 20px;
+    margin-top: 60px;
+}
+
+.pages-page .pages-page__link {
+    font-size: 32px;
+    text-decoration: none;
+    color: var(--pbmit-blackish-color);
+    transition: color 0.2s linear;
+    &:hover {
+        color: var(--pbmit-global-color);
+    }
 }
