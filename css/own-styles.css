@@ -181,7 +181,9 @@
 }
 
 .m-intro-slider__controls .pbmit-swiper-button .swiper-button-next,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev  {
 	background: transparent;
 	border: 2px solid var(--pbmit-white-color);
 }
@@ -195,13 +197,17 @@
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-next:hover, 
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-prev:hover,
 .m-intro-slider__controls .pbmit-swiper-button .swiper-button-next:hover, 
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:hover {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:hover,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next:hover, 
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev:hover  {
 	background-color: var(--pbmit-blackish-color);
 	border-color:var(--pbmit-blackish-color);
 }
 
 .m-intro-slider__controls .pbmit-swiper-button .swiper-button-next:after,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:after {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:after,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next:after,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev:after {
 	color: var(--pbmit-white-color);
 }
 
@@ -213,12 +219,15 @@
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-next:hover:after,
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-prev:hover:after,
 .m-intro-slider__controls .pbmit-swiper-button .swiper-button-next:hover:after,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:hover:after {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:hover:after,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next:hover:after,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev:hover:after {
 	color: var(--pbmit-white-color);
 }
 
 .m-image-slider__controls .pbmit-swiper-button,
-.m-intro-slider__controls .pbmit-swiper-button {
+.m-intro-slider__controls .pbmit-swiper-button,
+.portfolio-single-slider__controls .pbmit-swiper-button {
     display: flex;
     gap: 10px;
 }
@@ -226,7 +235,9 @@
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-prev,
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-next,
 .m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next  {
 	bottom: 0;
 	top: auto;
 	border-radius: 0;
@@ -237,7 +248,9 @@
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-prev:before,
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-next:before,
 .m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:before,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next:before {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next:before,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev:before,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next:before {
 	position: absolute;
     content: '';
 	background-color: var(--pbmit-white-color);
@@ -251,7 +264,8 @@
 }
 
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-next,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next {
 	position: relative;
     left: 0;
     right: 0;
@@ -259,11 +273,14 @@
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-next:hover:before,
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-prev:hover:before,
 .m-intro-slider__controls .pbmit-swiper-button .swiper-button-next:hover:before,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:hover:before  {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:hover:before,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next:hover:before,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev:hover:before   {
 	background-color: var(--pbmit-blackish-color);
 }
 .m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev,
-.m-image-slider__controls .pbmit-swiper-button .swiper-button-prev {
+.m-image-slider__controls .pbmit-swiper-button .swiper-button-prev,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev {
     position: relative;
     left: 0;
     right: 0;
@@ -271,7 +288,8 @@
 }
 
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-prev:before,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:before {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-prev:before,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-prev:before {
     left: 32px;
     right: auto;
     height: 2px;
@@ -280,12 +298,14 @@
 }
 
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-next,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next {
     clip-path: polygon(100% 0, 100% 70%, 70% 100%, 0 100%, 0 0);
 }
 
 .m-image-slider__controls .pbmit-swiper-button .swiper-button-next:before,
-.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next:before {
+.m-intro-slider__controls .pbmit-swiper-button .swiper-button-next:before,
+.portfolio-single-slider__controls .pbmit-swiper-button .swiper-button-next:before {
     right: -5px;
     left: auto;
     height: 2px;
@@ -304,9 +324,44 @@
     justify-content: flex-end;
 }
 
+.portfolio-single-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 605px;
+}
+
+.portfolio-single-slider__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-single-slider__media img, 
+.portfolio-single-slider__media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-single-slider__controls {
+    position: absolute;
+    right: 30px;
+    bottom: 27.5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 @media screen and (max-width: 1200px) {
     .m-intro-slider__slide {
         min-height: calc(100vh - 80px);
+    }
+    .portfolio-single-slider {
+        height: auto;
+        min-height: 380px;
+        aspect-ratio: 1 / 0.517;
     }
 }
 
@@ -1007,6 +1062,24 @@
 @media screen and (max-width: 767px) {
     .page-for-business .pbmit-element-portfolio-style-2 {
         padding-bottom: 60px;
+    }
+}
+
+/* Проекты */
+
+.projects-page .pbmit-element-posts-wrapper {
+    columns: 2;
+    column-gap: 30px;
+}
+
+.projects-page .pbmit-element-posts-wrapper .pbmit-ele.pbmit-portfolio-style-1 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 567px) {
+    .projects-page .pbmit-element-posts-wrapper {
+        columns: unset;
     }
 }
 

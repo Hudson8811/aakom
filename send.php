@@ -125,12 +125,12 @@ if( !empty($_POST) ){
 			//echo ;
 		} else {
 			$email_status			= 'success';
-			$email_status_message	= '<div class="alert alert-success" role="alert">Thank for filling the form. <br> Our team will contact you soon !!! </div>';
+			$email_status_message	= '<div class="alert alert-success" role="alert">Благодарим за заполнение формы. <br> Наша команда свяжется с вами в ближайшее время!!! </div>';
 		}
 
 	} else {
 
-		die('<p>Please fill all form data and try again. Please go back and try again.</p>');
+		die('<p>Что-то пошло не так. Пожалуйста, попробуйте снова.</p>');
 
 	}
 
@@ -152,7 +152,7 @@ if( !empty($_POST) ){
 			echo $email_status_message;
 
 			if( $email_status == 'error' ){
-				echo '<h3>Please go back and submit the form again !!!</h3>';
+				echo '<h3>Что-то пошло не так. Пожалуйста, попробуйте снова.</h3>';
 			}
 
 		}
@@ -164,7 +164,7 @@ if( !empty($_POST) ){
 
 } else {
 
-	die('<p>Please go to Contact page and fill the contact form.</p>');
+	die('<p>Пожалуйста, заполните контактную форму.</p>');
 
 }
 

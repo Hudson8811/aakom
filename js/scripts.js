@@ -543,7 +543,7 @@
  
      $.ajax( {
        type: "POST",
-       url: "send.php",
+       url: "/send.php",
        data:$('#contact-form').serialize(),
        success: function(cevap) {
          $('.form-btn-loader').addClass('d-none');
@@ -563,8 +563,7 @@
     Masonry
    -------------------------------------*/
  
-//document.addEventListener("load", function() {
-	if (jQuery('.pbmit-element-viewtype-masonry').length > 0) {
+/*if (jQuery('.pbmit-element-viewtype-masonry').length > 0) {
 		jQuery('.pbmit-element-viewtype-masonry').each(function() {
 
 			var main_ele = jQuery(this); 			
@@ -583,8 +582,7 @@
 			});
 			
 		}
-	)};
-//})
+	)};*/
 
 document.addEventListener("DOMContentLoaded", () => {
 	const mIntroSlider = document.querySelector('[data-js="mIntroSlider"]');
@@ -597,6 +595,19 @@ document.addEventListener("DOMContentLoaded", () => {
 				el: '.swiper-pagination',
 				type: 'bullets',
 			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		})
+
+	}
+
+	const portfolioSingleSlider = document.querySelector('[data-js="portfolioSingleSlider"]');
+
+	if(portfolioSingleSlider) {
+		let portfolioSingleSliderEx = new Swiper(portfolioSingleSlider, {
+			slidesPerView: 1,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
