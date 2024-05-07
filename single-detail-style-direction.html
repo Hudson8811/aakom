@@ -26,6 +26,8 @@
       <link rel="stylesheet" href="css/themify-icons.css">
       <!-- Swiper -->
       <link rel="stylesheet" href="css/swiper.min.css">
+	  <!-- Fancybox -->
+	  <link rel="stylesheet" href="css/fancybox.css">
       <!-- Magnific -->
       <link rel="stylesheet" href="css/magnific-popup.css"> 
       <!-- Shortcode CSS -->
@@ -149,6 +151,9 @@
 
 		<!-- Title Bar -->
 		<div class="pbmit-title-bar-wrapper">
+			<div class="pbmit-title-bar-bg">
+				<img src="images/bg/titlebar-bg.jpg" alt="">
+			</div>
 			<div class="container">
 				<div class="pbmit-title-bar-content">
 					<div class="pbmit-title-bar-content-inner">
@@ -328,38 +333,40 @@
 										<h3>Описание</h3>
 									</div>
 									<div class="col-md-8 pf-description_col2">
-										<p class="mb-0">Установка систем ВИДЕОНАБЛЮДЕНИЯ любой сложности от проектирования до монтажа и последующего обслуживания.</p>
+										<div class="text-block">
+											<p>Установка систем ВИДЕОНАБЛЮДЕНИЯ любой сложности от проектирования до монтажа и последующего обслуживания.</p>
+										</div>
 										<div class="m-image-slider" data-js="mImageSlider">
 											<div class="swiper-wrapper">
 												<div class="m-image-slider__slide swiper-slide">
 													<div class="pbmit-animation-style1">
-														<div class="pbmit-pf-img01 m-image-slider__img">
+														<a href='images/portfolio/portfolio-single-detail-01.jpg' data-fancybox='mImageItem' data-thumb="images/portfolio/portfolio-single-detail-01.jpg" class="pbmit-pf-img01 m-image-slider__img">
 															<img src="images/portfolio/portfolio-single-detail-01.jpg" class="img-fluid" alt="">
-														</div>
+														</a>
 													</div>
 												</div>
 												<div class="m-image-slider__slide swiper-slide">
 													<div class="pbmit-animation-style2">
-														<div class="pbmit-pf-img02 m-image-slider__img">
+														<a href='video/video.mp4' data-fancybox='mImageItem' data-type="html5video" data-thumb="images/portfolio/portfolio-single-detail-02.jpg" class="pbmit-pf-img02 m-image-slider__img">
 															<video poster="images/portfolio/portfolio-single-02.jpg" autoplay muted loop>
 																<source src="video/video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
 																<source src="video/video.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
 															</video>
-														</div>
+														</a>
 													</div>
 												</div>
 												<div class="m-image-slider__slide swiper-slide">
 													<div class="pbmit-animation-style1">
-														<div class="pbmit-pf-img01 m-image-slider__img">
+														<a href='images/portfolio/portfolio-single-detail-01.jpg' data-fancybox='mImageItem' data-thumb="images/portfolio/portfolio-single-detail-01.jpg" class="pbmit-pf-img01 m-image-slider__img">
 															<img src="images/portfolio/portfolio-single-detail-01.jpg" class="img-fluid" alt="">
-														</div>
+														</a>
 													</div>
 												</div>
 												<div class="m-image-slider__slide swiper-slide">
 													<div class="pbmit-animation-style2">
-														<div class="pbmit-pf-img02 m-image-slider__img">
+														<a href='images/portfolio/portfolio-single-detail-02.jpg' data-fancybox='mImageItem' data-thumb="images/portfolio/portfolio-single-detail-02.jpg" class="pbmit-pf-img02 m-image-slider__img">
 															<img src="images/portfolio/portfolio-single-detail-02.jpg" class="img-fluid" alt="">
-														</div>
+														</a>
 													</div>
 												</div>
 											</div>
@@ -379,28 +386,51 @@
 										<h3>Рабочий процесс</h3>
 									</div>
 									<div class="col-md-4 pf-description_col2">
-										<p>Мы являемся официальным дистрибьютором ведущих мировых марок в области безопасности и имеем возможность поставлять инновационное оборудование по цене ниже рыночной в т.ч и передовые системы:</p>
-										<ul class="list-group list-group-borderless">
-											<li class="list-group-item">
-												<span class="pbmit-icon-list-icon">
-													<i aria-hidden="true" class="fa fa-check"></i>
-												</span>
-												<span class="pbmit-icon-list-text">с обзором в 360 градусов;</span>
-											</li>
-											<li class="list-group-item">
-												<span class="pbmit-icon-list-icon">
-													<i aria-hidden="true" class="fa fa-check"></i>
-												</span>
-												<span class="pbmit-icon-list-text"> с возможностью ночной съемки;</span>
-											</li>
-											<li class="list-group-item">
-												<span class="pbmit-icon-list-icon">
-													<i aria-hidden="true" class="fa fa-check"></i>
-												</span>
-												<span class="pbmit-icon-list-text"> с функцией тепловизионных камер.</span>
-											</li>
-										</ul>
-										<p>С помощью наших систем вы получите возможность объективно оценивать ситуацию в момент нарушения, проводить анализ и осуществлять контроль персонала.</p>
+										<div class="text-block">
+											<p>Мы являемся официальным дистрибьютором ведущих мировых марок в области безопасности и имеем возможность поставлять инновационное оборудование по цене ниже рыночной в т.ч и передовые системы:</p>
+											<ul>
+												<li>
+													<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_276_526)">
+														<path d="M5.63141 14.5276L0.431406 9.32758C0.271406 9.17824 0.191406 8.99158 0.191406 8.76758C0.191406 8.54358 0.271406 8.35158 0.431406 8.19158L1.55141 7.07158C1.71141 6.91158 1.90341 6.83158 2.12741 6.83158C2.35141 6.83158 2.53807 6.91158 2.68741 7.07158L6.19141 10.5756L13.6954 3.07158C13.8554 2.91158 14.0447 2.83158 14.2634 2.83158C14.4821 2.83158 14.6714 2.91158 14.8314 3.07158L15.9514 4.19158C16.1114 4.35158 16.1914 4.54358 16.1914 4.76758C16.1914 4.99158 16.1114 5.17824 15.9514 5.32758L6.75141 14.5276C6.60207 14.6876 6.41541 14.7676 6.19141 14.7676C5.96741 14.7676 5.78074 14.6876 5.63141 14.5276Z" fill="#3147F3"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_276_526">
+														<rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0.191406 16.7998)"/>
+														</clipPath>
+														</defs>
+													</svg>
+													<b>с обзором в 360 градусов;</b>
+												</li>
+												<li>
+													<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_276_526)">
+														<path d="M5.63141 14.5276L0.431406 9.32758C0.271406 9.17824 0.191406 8.99158 0.191406 8.76758C0.191406 8.54358 0.271406 8.35158 0.431406 8.19158L1.55141 7.07158C1.71141 6.91158 1.90341 6.83158 2.12741 6.83158C2.35141 6.83158 2.53807 6.91158 2.68741 7.07158L6.19141 10.5756L13.6954 3.07158C13.8554 2.91158 14.0447 2.83158 14.2634 2.83158C14.4821 2.83158 14.6714 2.91158 14.8314 3.07158L15.9514 4.19158C16.1114 4.35158 16.1914 4.54358 16.1914 4.76758C16.1914 4.99158 16.1114 5.17824 15.9514 5.32758L6.75141 14.5276C6.60207 14.6876 6.41541 14.7676 6.19141 14.7676C5.96741 14.7676 5.78074 14.6876 5.63141 14.5276Z" fill="#3147F3"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_276_526">
+														<rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0.191406 16.7998)"/>
+														</clipPath>
+														</defs>
+													</svg>
+													<b>с возможностью ночной съемки;</b>
+												</li>
+												<li>
+													<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_276_526)">
+														<path d="M5.63141 14.5276L0.431406 9.32758C0.271406 9.17824 0.191406 8.99158 0.191406 8.76758C0.191406 8.54358 0.271406 8.35158 0.431406 8.19158L1.55141 7.07158C1.71141 6.91158 1.90341 6.83158 2.12741 6.83158C2.35141 6.83158 2.53807 6.91158 2.68741 7.07158L6.19141 10.5756L13.6954 3.07158C13.8554 2.91158 14.0447 2.83158 14.2634 2.83158C14.4821 2.83158 14.6714 2.91158 14.8314 3.07158L15.9514 4.19158C16.1114 4.35158 16.1914 4.54358 16.1914 4.76758C16.1914 4.99158 16.1114 5.17824 15.9514 5.32758L6.75141 14.5276C6.60207 14.6876 6.41541 14.7676 6.19141 14.7676C5.96741 14.7676 5.78074 14.6876 5.63141 14.5276Z" fill="#3147F3"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_276_526">
+														<rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0.191406 16.7998)"/>
+														</clipPath>
+														</defs>
+													</svg>	
+													<b>с функцией тепловизионных камер.</b>
+												</li>
+											</ul>
+											<p>С помощью наших систем вы получите возможность объективно оценивать ситуацию в момент нарушения, проводить анализ и осуществлять контроль персонала.</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -410,8 +440,10 @@
 										<h3>Заголовок 1</h3>
 									</div>
 									<div class="col-md-8 pf-description_col2">
-										<div>
-											Я недавно установил систему видеонаблюдения у себя дома, и я очень доволен результатами. Качество изображения отличное, даже в ночное время. Установка была выполнена быстро и профессионально, а техподдержка всегда готова помочь при возникновении вопросов. Система позволяет мне контролировать свой дом, находясь на работе или в отпуске. Рекомендую всем это надежное и удобное решение для обеспечения безопасности вашего дома!
+										<div class="text-block">
+											<p>
+												Я недавно установил систему видеонаблюдения у себя дома, и я очень доволен результатами. Качество изображения отличное, даже в ночное время. Установка была выполнена быстро и профессионально, а техподдержка всегда готова помочь при возникновении вопросов. Система позволяет мне контролировать свой дом, находясь на работе или в отпуске. Рекомендую всем это надежное и удобное решение для обеспечения безопасности вашего дома!
+											</p>
 										</div>
 									</div>
 								</div>
@@ -743,6 +775,8 @@
 	<script src="js/numinate.min.js"></script>
 	<!-- Slick JS -->
 	<script src="js/swiper.min.js"></script>
+	<!-- Fancybox -->
+	<script src="js/fancybox.umd.js"></script>
 	<!-- Magnific JS -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<!-- Circle Progress JS -->

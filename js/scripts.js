@@ -650,5 +650,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	}
 
+	if(typeof Fancybox == 'function') {
+		Fancybox.bind("[data-fancybox]", {
+			placeFocusBack: false,
+			idle: false,
+			Thumbs: {
+				type: "classic",
+			},
+	
+		});
+	}
 })	
 
