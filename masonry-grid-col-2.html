@@ -176,19 +176,19 @@
 		<div class="page-content ">  
 
 		<!-- Mesonary Grid Col 2 -->
-		<section class="section-md pbmit-element-viewtype-masonry">
+		<section class="section-md pbmit-element-viewtype-masonry pbmit-sortable-yes">
 			<div class="container">
 				<div class="pbmit-sortable-list">
 					<ul class="pbmit-sortable-list-ul">
 						<li><a href="#" class="pbmit-sortable-link pbmit-selected" data-sortby="*">Все</a></li>
-						<li><a href="#" class="pbmit-sortable-link" data-sortby="alarm-system">Школы</a></li>
-						<li><a href="#" class="pbmit-sortable-link" data-sortby="equipment">Частный дом</a></li>
-						<li><a href="#" class="pbmit-sortable-link" data-sortby="night-vision">Предприятие</a></li>
-						<li><a href="#" class="pbmit-sortable-link" data-sortby="protectiona">Спортзал</a></li>
+						<li><a href="#" class="pbmit-sortable-link" data-sortby="schools">Школы</a></li>
+						<li><a href="#" class="pbmit-sortable-link" data-sortby="private-house">Частный дом</a></li>
+						<li><a href="#" class="pbmit-sortable-link" data-sortby="company">Предприятие</a></li>
+						<li><a href="#" class="pbmit-sortable-link" data-sortby="gym">Спортзал</a></li>
 					</ul>
 				</div>
 				<div class="pbmit-element-posts-wrapper">
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 gym">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
@@ -207,11 +207,14 @@
 							</div>
 						</div>
 					</article>
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 company">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
-									<img src="images/portfolio/portfolio-03.jpg" class="img-fluid" alt="">
+									<video poster="revolution/images/bg-img.jpg" autoplay muted loop>
+										<source src="video/video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+										<source src="video/video.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+									</video>
 								</div>
 							</div>
 							<div class="pbminfotech-box-content">
@@ -226,7 +229,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 company">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
@@ -245,7 +248,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 company">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
@@ -264,7 +267,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 company">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
@@ -283,7 +286,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 company">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
@@ -302,7 +305,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 company">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
@@ -321,7 +324,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 company">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
@@ -340,7 +343,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="pbmit-ele pbmit-portfolio-style-1">
+					<article class="pbmit-ele pbmit-portfolio-style-1 schools">
 						<div class="pbminfotech-post-content">
 							<div class="pbmit-featured-img-wrapper">
 								<div class="pbmit-featured-wrapper">
@@ -555,6 +558,8 @@
 	<script src='js/magnetic.js'></script>
 	<!-- Masonry JS -->
 	<script src="js/masonry.min.js"></script>
+	<!-- Isotope JS -->
+	<script src="js/isotope.pkgd.min.js"></script>
 	<!-- GSAP Animation -->
 	<script src='js/gsap-animation.js'></script>        
 	<!-- Scripts JS -->

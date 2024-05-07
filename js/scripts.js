@@ -429,6 +429,9 @@
 		  jQuery(this).addClass('pbmit-selected');
 		  e.preventDefault(); 
 		});
+		if(boxes.hasClass('sort-on-load')) {
+			links[0].click()
+		}
 	}); 
 
 	/*-------------------------------------
@@ -563,7 +566,7 @@
     Masonry
    -------------------------------------*/
  
-/*if (jQuery('.pbmit-element-viewtype-masonry').length > 0) {
+	/*if (jQuery('.pbmit-element-viewtype-masonry').length > 0) {
 		jQuery('.pbmit-element-viewtype-masonry').each(function() {
 
 			var main_ele = jQuery(this); 			
