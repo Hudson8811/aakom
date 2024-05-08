@@ -50,12 +50,16 @@
     color: #666;
 }
 
-.text-block ul li svg {
-    width: 17px;
-    height: 17px;
+.text-block ul li::before {
+    content: "";
     position: absolute;
     left: 0;
     top: 5px;
+    width: 17px;
+    height: 17px;
+    background-image: url('../images/list_checkmark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .text-block ol li {
@@ -1400,7 +1404,7 @@
     color: #14193C;
 }
 
-.direction-page .text-block ul li svg {
+.direction-page .text-block ul li:before {
     width: 14.7px;
     height: 14.7px;
 }
@@ -1452,6 +1456,7 @@
     top: 10px;
     width: 5px;
     height: 5px;
+    background-image: none;
     background-color: #14193C;
     border-radius: 100%;
 }
