@@ -1345,25 +1345,15 @@
 
 /* Проекты */
 
-.projects-page .pbmit-element-posts-wrapper {
-    columns: 2;
-    column-gap: 30px;
-    height: auto !important;
-}
-
-.projects-page .pbmit-element-posts-wrapper .pbmit-ele.pbmit-portfolio-style-1 {
-    padding-left: 0;
-    padding-right: 0;
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: translate3d(0, 0, 0) !important;
+.pbmit-portfolio-style-1.pbmit-portfolio-style-1--video .pbmit-featured-wrapper {
+    aspect-ratio: 16 / 9;
+    height: auto;
 }
 
 .pbmit-portfolio-style-1 .pbmit-featured-wrapper video {
     width: 100%;
+    height: 100%;
     transition: all 500ms ease;
-    height: auto;
     object-fit: cover;
     display: block;
 }
@@ -1371,12 +1361,6 @@
 .pbmit-portfolio-style-1:hover .pbmit-featured-wrapper video {
     opacity: 0.1;
     transform: scale(1.05);
-}
-
-@media screen and (max-width: 567px) {
-    .projects-page .pbmit-element-posts-wrapper {
-        columns: unset;
-    }
 }
 
 /* Направление */

@@ -417,9 +417,10 @@
 
     jQuery('.pbmit-sortable-yes').each(function(){ 
 		var boxes = jQuery('.pbmit-element-posts-wrapper', this ); 
-		var links = jQuery('.pbmit-sortable-list a', this ); 
+		var links = jQuery('.pbmit-sortable-list a', this );
+
 		boxes.isotope({ animationEngine : 'best-available'}); 
-		links.on('click', function(e){  
+		links.on('click', function(e) {
 		  var selector = jQuery(this).data('sortby'); 
 		  if( selector != '*' ){ 
 			var selector = '.' + selector; 
@@ -429,10 +430,12 @@
 		  jQuery(this).addClass('pbmit-selected');
 		  e.preventDefault(); 
 		});
+
 		if(boxes.hasClass('sort-on-load')) {
 			links[0].click()
 		}
-	}); 
+		
+	});
 
 	/*-------------------------------------
     Stretched Div
@@ -566,12 +569,14 @@
     Masonry
    -------------------------------------*/
  
-	/*if (jQuery('.pbmit-element-viewtype-masonry').length > 0) {
+	//строит секту
+ function masonryBuild() {
 		jQuery('.pbmit-element-viewtype-masonry').each(function() {
 
-			var main_ele = jQuery(this); 			
+			var main_ele = jQuery(this);
+
 			// init Masonry
-			let $grid = jQuery('.pbmit-element-posts-wrapper', main_ele).masonry({
+			$grid = jQuery('.pbmit-element-posts-wrapper', main_ele).masonry({
 				
 				itemSelector: '.pbmit-blog-style-1,.pbmit-portfolio-style-1',
 				columnWidth: '.pbmit-blog-style-1,.pbmit-portfolio-style-1',
@@ -584,8 +589,43 @@
 				horizontalOrder: true
 			});
 			
-		}
-	)};*/
+		})
+ }
+
+ //перезапускает построение сетки
+ function masonryReload() {
+	$grid.masonry('destroy')
+	masonryBuild()
+ }
+
+ //проверяет загружены ли картинки
+ function onImagesLoaded(container, event) {
+    var images = container.getElementsByTagName("img");
+    var loaded = images.length;
+    for (var i = 0; i < images.length; i++) {
+        if (images[i].complete) {
+            loaded--;
+        }
+        else {
+            images[i].addEventListener("load", function() {
+                loaded--;
+                if (loaded == 0) {
+                    event();
+                }
+            });
+        }
+        if (loaded == 0) {
+            event();
+        }
+    }
+}
+
+let masoryContainer = document.querySelector(".pbmit-element-viewtype-masonry");
+
+onImagesLoaded(masoryContainer, function() {
+	masonryBuild();
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
 	const mIntroSlider = document.querySelector('[data-js="mIntroSlider"]');
